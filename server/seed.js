@@ -1,0 +1,308 @@
+export const seed = {
+  "inventory": [
+    {
+      "id": "i1",
+      "name": "Salmon fillet",
+      "category": "protein",
+      "qtyKg": 8,
+      "expiresInDays": 2,
+      "costPerKg": 60,
+      "storageZone": "cold",
+      "storageNote": "coldest shelf, on ice"
+    },
+    {
+      "id": "i2",
+      "name": "Chicken thigh",
+      "category": "protein",
+      "qtyKg": 25,
+      "expiresInDays": 4,
+      "costPerKg": 18,
+      "storageZone": "chilled",
+      "storageNote": "bottom shelf, sealed"
+    },
+    {
+      "id": "i3",
+      "name": "Basmati rice",
+      "category": "grain",
+      "qtyKg": 40,
+      "expiresInDays": 120,
+      "costPerKg": 8,
+      "storageZone": "pantry",
+      "storageNote": "airtight, dry pantry"
+    },
+    {
+      "id": "i4",
+      "name": "Mixed vegetables",
+      "category": "vegetable",
+      "qtyKg": 15,
+      "expiresInDays": 3,
+      "costPerKg": 10,
+      "storageZone": "cool",
+      "storageNote": "crisper, paper-lined"
+    },
+    {
+      "id": "i5",
+      "name": "Prawns",
+      "category": "protein",
+      "qtyKg": 6,
+      "expiresInDays": 2,
+      "costPerKg": 55,
+      "storageZone": "cold",
+      "storageNote": "buried in ice"
+    },
+    {
+      "id": "i6",
+      "name": "Yogurt",
+      "category": "dairy",
+      "qtyKg": 10,
+      "expiresInDays": 5,
+      "costPerKg": 12,
+      "storageZone": "chilled",
+      "storageNote": "back of fridge"
+    },
+    {
+      "id": "i7",
+      "name": "Paneer",
+      "category": "dairy",
+      "qtyKg": 7,
+      "expiresInDays": 3,
+      "costPerKg": 28,
+      "storageZone": "chilled",
+      "storageNote": "submerged in water"
+    },
+    {
+      "id": "i8",
+      "name": "Curry sauce base",
+      "category": "sauce",
+      "qtyKg": 12,
+      "expiresInDays": 7,
+      "costPerKg": 15,
+      "storageZone": "chilled",
+      "storageNote": "sealed jar, chilled"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "r1",
+      "name": "Chicken biryani",
+      "historicalWastePct": 22,
+      "ingredients": [
+        {
+          "itemId": "i2",
+          "kgPerGuest": 0.18,
+          "name": "Chicken thigh"
+        },
+        {
+          "itemId": "i3",
+          "kgPerGuest": 0.15,
+          "name": "Basmati rice"
+        },
+        {
+          "itemId": "i8",
+          "kgPerGuest": 0.05,
+          "name": "Curry sauce base"
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Grilled salmon",
+      "historicalWastePct": 8,
+      "ingredients": [
+        {
+          "itemId": "i1",
+          "kgPerGuest": 0.16,
+          "name": "Salmon fillet"
+        },
+        {
+          "itemId": "i4",
+          "kgPerGuest": 0.08,
+          "name": "Mixed vegetables"
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Prawn curry",
+      "historicalWastePct": 12,
+      "ingredients": [
+        {
+          "itemId": "i5",
+          "kgPerGuest": 0.12,
+          "name": "Prawns"
+        },
+        {
+          "itemId": "i8",
+          "kgPerGuest": 0.06,
+          "name": "Curry sauce base"
+        },
+        {
+          "itemId": "i3",
+          "kgPerGuest": 0.1,
+          "name": "Basmati rice"
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "Paneer tikka",
+      "historicalWastePct": 18,
+      "ingredients": [
+        {
+          "itemId": "i7",
+          "kgPerGuest": 0.1,
+          "name": "Paneer"
+        },
+        {
+          "itemId": "i6",
+          "kgPerGuest": 0.05,
+          "name": "Yogurt"
+        },
+        {
+          "itemId": "i4",
+          "kgPerGuest": 0.06,
+          "name": "Mixed vegetables"
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "Vegetable pilaf",
+      "historicalWastePct": 25,
+      "ingredients": [
+        {
+          "itemId": "i3",
+          "kgPerGuest": 0.14,
+          "name": "Basmati rice"
+        },
+        {
+          "itemId": "i4",
+          "kgPerGuest": 0.1,
+          "name": "Mixed vegetables"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "name": "Tan Wedding Reception",
+      "eventType": "wedding",
+      "guestCount": 180,
+      "date": "2026-06-23",
+      "menu": [
+        "r1",
+        "r2",
+        "r4"
+      ],
+      "client": "Mr. & Mrs. Tan"
+    },
+    {
+      "id": "e2",
+      "name": "Acme Corp Annual Dinner",
+      "eventType": "corporate",
+      "guestCount": 120,
+      "date": "2026-06-24",
+      "menu": [
+        "r1",
+        "r3",
+        "r5"
+      ],
+      "client": "Acme Corp"
+    },
+    {
+      "id": "e3",
+      "name": "Lim 50th Birthday",
+      "eventType": "birthday",
+      "guestCount": 60,
+      "date": "2026-06-22",
+      "menu": [
+        "r2",
+        "r4",
+        "r5"
+      ],
+      "client": "Lim Family"
+    }
+  ],
+  "pastEvents": [
+    {
+      "id": "p1",
+      "eventType": "wedding",
+      "guestCount": 200,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 140,
+      "totalFoodConsumedKg": 110
+    },
+    {
+      "id": "p2",
+      "eventType": "wedding",
+      "guestCount": 150,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 108,
+      "totalFoodConsumedKg": 82
+    },
+    {
+      "id": "p3",
+      "eventType": "corporate",
+      "guestCount": 100,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 70,
+      "totalFoodConsumedKg": 48
+    },
+    {
+      "id": "p4",
+      "eventType": "corporate",
+      "guestCount": 130,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 95,
+      "totalFoodConsumedKg": 60
+    },
+    {
+      "id": "p5",
+      "eventType": "birthday",
+      "guestCount": 50,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 38,
+      "totalFoodConsumedKg": 30
+    },
+    {
+      "id": "p6",
+      "eventType": "birthday",
+      "guestCount": 80,
+      "cuisine": "mixed",
+      "totalFoodPreparedKg": 60,
+      "totalFoodConsumedKg": 45
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "s1",
+      "name": "FreshCatch Seafood",
+      "itemsSupplied": [
+        "i1",
+        "i5"
+      ],
+      "leadTimeDays": 1
+    },
+    {
+      "id": "s2",
+      "name": "Green Valley Produce",
+      "itemsSupplied": [
+        "i4"
+      ],
+      "leadTimeDays": 1
+    },
+    {
+      "id": "s3",
+      "name": "Metro Wholesale",
+      "itemsSupplied": [
+        "i2",
+        "i3",
+        "i6",
+        "i7",
+        "i8"
+      ],
+      "leadTimeDays": 2
+    }
+  ]
+};
