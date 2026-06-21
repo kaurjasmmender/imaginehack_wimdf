@@ -175,5 +175,6 @@ npm run dev
 
 ### Video Demonstration
 
-(https://youtu.be/74xZLNJkh3s)
+Presentation video: (https://youtu.be/u7URK9mwkwA)
+Prototype demo: (https://youtu.be/74xZLNJkh3s)
 
